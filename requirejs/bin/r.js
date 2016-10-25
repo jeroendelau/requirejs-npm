@@ -22392,9 +22392,9 @@ exports.minify = function(files, options, name) {
 
     // 3. mangle properties
     if (options.mangleProperties || options.nameCache) {
-        options.mangleProperties.cache = readNameCache(options.nameCache, "props");
+        //options.mangleProperties.cache = readNameCache(options.nameCache, "props");
         toplevel = mangle_properties(toplevel, options.mangleProperties);
-        writeNameCache(options.nameCache, "props", options.mangleProperties.cache);
+        //writeNameCache(options.nameCache, "props", options.mangleProperties.cache);
     }
 
     // 4. mangle
